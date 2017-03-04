@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
-export default class App extends Component {
+export default class Localidad extends Component {
+
   render() {
     return (
-      <div>Futbol Ya</div>
+      <div >Localidad</div>
     );
   }
 }

@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './components/app';
+import FutbolYa from './components/futbolYa';
+import Localidad from './components/localidad';
+import Buscar from './components/buscar';
+import Botones from './components/botones';
 
-ReactDOM.render(<App /> , document.querySelector('.futbolYa'));
+ReactDOM.render(<FutbolYa /> , document.querySelector('.futbolYa'));
+ReactDOM.render(<Localidad/> , document.querySelector('.localidad'));
+ReactDOM.render(<Buscar/> , document.querySelector('.buscar'));
+ReactDOM.render(<Botones/> , document.querySelector('.botones'));
