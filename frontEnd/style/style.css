@@ -1,0 +1,36 @@
+.futbolYa{
+    background: url("img/futbolfondo.jpeg") no-repeat top center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.tit{
+  text-align: center;
+  padding-top: 10%;
+  font-size:110px;
+  color:rgba(10,64,154,0.8);
+  font-weight: bold;
+}
+.subTit{
+  padding-top: 10%;
+  color:rgba(250, 250, 250, 0.9);
+  text-align: justify;
+  font-weight: bold;
+}
+.baja
+{
+  padding-top: 2.5%;
+  font-size: 20px;
+  text-align: center;
+  color:white;
+}
+
+.derecha{
+  padding-top: 2.5%;
+  text-align: right;
+  color:rgba(250,250,250,0.8);
+  font-size: 30px;
+  font-weight: bold;
+}
