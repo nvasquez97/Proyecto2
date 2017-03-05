@@ -34,3 +34,19 @@
   font-size: 30px;
   font-weight: bold;
 }
+
+.localidad{
+  background-color: rgb(61,60,60);
+}
+
+.primero{
+  padding-top:8%;
+  padding-left: 35%;
+  font-style: oblique;
+  color:white;
+}
+
+.btn-group{
+  padding-top:5%;
+  padding-left:35%;
+}
