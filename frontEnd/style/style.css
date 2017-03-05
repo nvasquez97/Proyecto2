@@ -9,6 +9,10 @@
 .todo{
   display: none;
 }
+.row
+{
+  margin-right: 0;
+}
 .tit{
   text-align: center;
   padding-top: 10%;
