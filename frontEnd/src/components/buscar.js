@@ -14,7 +14,9 @@ export default class Buscar extends Component {
   }
   render() {
     return (
-      <div >Busca tus vainas</div>
+      <div>
+        <h1></h1>
+      </div>
     );
   }
 

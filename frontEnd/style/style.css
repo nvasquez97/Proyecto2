@@ -1,16 +1,19 @@
 .futbolYa{
-    background: url("img/futbolfondo.jpeg") no-repeat top center fixed;
+    background: url("img/futbolfondo1.jpeg") no-repeat top center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
 }
+.todo{
+  display: none;
+}
 .tit{
   text-align: center;
   padding-top: 10%;
   font-size:110px;
-  color:rgba(10,64,154,0.8);
+  color:rgba(73, 255, 0, 0.8);
   font-weight: bold;
 }
 .subTit{
@@ -26,11 +29,17 @@
   text-align: center;
   color:white;
 }
-
+.loading{
+  text-align: center;
+  color: grey;
+}
+#centro{
+  padding-top: 20%;
+}
 .derecha{
   padding-top: 2.5%;
   text-align: right;
-  color:rgba(250,250,250,0.8);
+  color:rgba(73, 255, 0, 0.7);
   font-size: 30px;
   font-weight: bold;
 }
@@ -41,12 +50,12 @@
 
 .primero{
   padding-top:8%;
-  padding-left: 35%;
+  text-align: center;
   font-style: oblique;
   color:white;
 }
 
 .btn-group{
   padding-top:5%;
-  padding-left:35%;
+  padding-left: 35%;
 }
