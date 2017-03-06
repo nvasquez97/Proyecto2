@@ -21,9 +21,19 @@
 .reservaD{
   float:right;
   width:30%;
+  text-align: center;
+}
+.imgCancha
+{
+  max-width:100px;
+  padding:10px;
 }
 .reservas{
   display:inline-block;
+}
+.reserva{
+  background-color: rgba(250,250,250,0.3);
+  margin-bottom: 10px;
 }
 .buscar{
     background: url("img/futbolfondo1.jpeg") no-repeat top center fixed;
@@ -90,7 +100,7 @@
 
 .btn-group{
   padding-top:5%;
-  padding-left: 35%;
+  padding-left: 30%;
 }
 
 .loc{

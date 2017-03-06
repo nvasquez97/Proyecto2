@@ -28,7 +28,7 @@
             <button className="btn btn-default">Fútbol 8</button>
             <button className="btn btn-default">Fútbol 11</button>
           </div>
-          <h3 className="verde">Mira las reservas para {this.state.tipo}</h3>
+          <h3 className="verde">Mira las reservas para <strong>{this.state.tipo}</strong></h3>
             {this.state.reservas.map(reserva => {
               return <Reserva reserva={reserva} />
             })}
