@@ -1,3 +1,4 @@
+'use strict';
 const Cancha = require('./models/cancha');
 const Reserva = require('./models/reserva');
 const Usuario = require('./models/usuario');

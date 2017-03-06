@@ -1,8 +1,9 @@
+'use strict';
 //Tomado de: https://gist.github.com/iksose/9401758
 
 var mongo = require('mongodb').MongoClient;
 var db1;
-mongo.connect('mongodb://localhost:27017/FutbolYa',function(err,db){
+mongo.connect('mongodb://hola:1234@ds119810.mlab.com:19810/futbolya',function(err,db){
   if(err)
   {
     throw err;

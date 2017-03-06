@@ -2,7 +2,7 @@
   "name": "mongo",
   "version": "1.0.0",
   "description": "Backend FutbolYa",
-  "main": "index.js",
+  "main": "backEnd/index.js",
   "engines": {
     "node": "4.1.1"
   },
