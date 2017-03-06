@@ -6,9 +6,9 @@
     height: 100%;
     width: 100%;
 }
-/*.todo{
+.todo{
   display: none;
-}*/
+}
 .row
 {
   max-width:100%;
@@ -93,7 +93,7 @@
   padding-left: 35%;
 }
 
-loc{
+.loc{
   padding-top:5%;
   color:white;
 }
