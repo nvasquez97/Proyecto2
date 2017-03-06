@@ -1,24 +1,18 @@
-const thing = require('../db');
+var mongo = require('mongodb').MongoClient;
+var db1;
+mongo.connect('mongodb://localhost:27017/FutbolYa',function(err,db){
+  if(err)
+  {
+    throw err;
+  }
+  db1=db;
 
-const r = thing.r;
-const type = thing.type;
-
-
-var Usuario = thing.createModel('Usuario', {
-  _id:type.int(),
-  nombre: type.string()
-});
-
-exports.Usuario = Usuario;
-
-exports.list = (req, res) => {
-  Usuario
-  .run()
-  .then(usuarios => {
-    res.json(usuarios);
   })
-  .error(err => {
-    res.status(500);
-    res.send();
-  })
-}
+
+exports.list= function(req, res) {
+    db1.collection('usuario', function(err, collection) {
+        collection.find().toArray(function(err, items) {
+            res.send(items);
+        });
+    });
+};
