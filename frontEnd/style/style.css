@@ -118,3 +118,11 @@ ul li{
   float:left;
   margin: 20px 20px 20px 20px;
 }
+
+.infoReservas{
+background-color: rgb(61,60,60);
+}
+
+#info{
+  color:white;
+}
