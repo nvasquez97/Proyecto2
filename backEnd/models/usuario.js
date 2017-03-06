@@ -1,6 +1,6 @@
 'use strict';
 var mongo = require('mongodb').MongoClient;
-    BSON = mongo.BSONPure;
+var BSON = mongo.BSONPure;
 var db1;
 mongo.connect('mongodb://hola:1234@ds119810.mlab.com:19810/futbolya',function(err,db){
   if(err)

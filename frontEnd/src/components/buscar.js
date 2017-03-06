@@ -2,7 +2,7 @@
   import React, { Component } from 'react';
   import axios from 'axios'
   import Reserva from './reserva'
-  const URL="localhost:5000";
+  const URL="https://futbolyabackend.herokuapp.com/";
   export default class Buscar extends Component {
 
 
@@ -44,7 +44,7 @@
     }
 
     obtenerEstudiantes() {
-      axios.get(ROOT_URL+ "/estudiantes")
+      axios.get(URL+ "/estudiantes")
       .then(response => {
         this.setState({
           estudiantes: response.data
