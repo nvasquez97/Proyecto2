@@ -1,0 +1,47 @@
+{"_id":1.0,"direccion":"Cra 58 # 65-20","foto":"path","id_localidad":1.0,"tipo":5.0,"nombreSitio":"Fut5","contacto":3.1185265e+07}
+{"_id":2.0,"direccion":"Cra 58 # 65-20","foto":"path","id_localidad":1.0,"tipo":5.0,"nombreSitio":"Fut5","contacto":3.1185265e+07}
+{"_id":3.0,"direccion":"Cra 58 # 65-20","foto":"path","id_localidad":1.0,"tipo":7.0,"nombreSitio":"Fut5","contacto":3.1185265e+07}
+{"_id":4.0,"direccion":"Cra 58 # 65-20","foto":"path","id_localidad":1.0,"tipo":8.0,"nombreSitio":"Fut5","contacto":3.1185265e+07}
+{"_id":5.0,"direccion":"Cra 58 # 65-20","foto":"path","id_localidad":1.0,"tipo":11.0,"nombreSitio":"Fut5","contacto":3.1185265e+07}
+{"_id":6.0,"direccion":"Av. Boyaca # 146 -50","foto":"path","id_localidad":2.0,"tipo":5.0,"nombreSitio":"5Site","contacto":3.118865432e+09}
+{"_id":7.0,"direccion":"Av. Boyaca # 146 -50","foto":"path","id_localidad":2.0,"tipo":5.0,"nombreSitio":"5Site","contacto":3.118865432e+09}
+{"_id":8.0,"direccion":"Av. Boyaca # 146 -50","foto":"path","id_localidad":2.0,"tipo":5.0,"nombreSitio":"5Site","contacto":3.118865432e+09}
+{"_id":9.0,"direccion":"Av. Boyaca # 146 -50","foto":"path","id_localidad":2.0,"tipo":7.0,"nombreSitio":"5Site","contacto":3.118865432e+09}
+{"_id":10.0,"direccion":"Av. Boyaca # 146 -50","foto":"path","id_localidad":2.0,"tipo":8.0,"nombreSitio":"5Site","contacto":3.118865432e+09}
+{"_id":11.0,"direccion":"Av. Cra 30 #53-10","foto":"path","id_localidad":3.0,"tipo":5.0,"nombreSitio":"Campin5","contacto":3.12565489e+08}
+{"_id":12.0,"direccion":"Av. Cra 30 #53-10","foto":"path","id_localidad":3.0,"tipo":5.0,"nombreSitio":"Campin5","contacto":3.12565489e+08}
+{"_id":13.0,"direccion":"Av. Cra 30 #53-10","foto":"path","id_localidad":3.0,"tipo":5.0,"nombreSitio":"Campin5","contacto":3.12565489e+08}
+{"_id":14.0,"direccion":"Av. Cra 30 #53-10","foto":"path","id_localidad":3.0,"tipo":5.0,"nombreSitio":"Campin5","contacto":3.12565489e+08}
+{"_id":15.0,"direccion":"Carrera 21 # 30-27","foto":"path","id_localidad":4.0,"tipo":5.0,"nombreSitio":"5Site","contacto":3.118056489e+09}
+{"_id":16.0,"direccion":"Carrera 21 # 30-27","foto":"path","id_localidad":4.0,"tipo":8.0,"nombreSitio":"5Site","contacto":3.118056489e+09}
+{"_id":17.0,"direccion":"Carrera 21 # 30-27","foto":"path","id_localidad":4.0,"tipo":11.0,"nombreSitio":"5Site","contacto":3.118056489e+09}
+{"_id":18.0,"direccion":"Av. Kra 45 # 20-55","foto":"path","id_localidad":5.0,"tipo":11.0,"nombreSitio":"5Site","contacto":3.20545952e+08}
+{"_id":19.0,"direccion":"Av. Kra 45 # 20-55","foto":"path","id_localidad":5.0,"tipo":11.0,"nombreSitio":"5Site","contacto":3.20545952e+08}
+{"_id":20.0,"direccion":"Av. Kra 45 # 20-55","foto":"path","id_localidad":5.0,"tipo":11.0,"nombreSitio":"5Site","contacto":3.20545952e+08}
+{"_id":21.0,"direccion":"Cra 61 # 50-31","foto":"path","id_localidad":6.0,"tipo":7.0,"nombreSitio":"Fut5","contacto":3.1547896e+07}
+{"_id":22.0,"direccion":"Cra 61 # 50-31","foto":"path","id_localidad":6.0,"tipo":7.0,"nombreSitio":"Fut5","contacto":3.1547896e+07}
+{"_id":23.0,"direccion":"Cra 61 # 50-31","foto":"path","id_localidad":6.0,"tipo":7.0,"nombreSitio":"Fut5","contacto":3.1547896e+07}
+{"_id":24.0,"direccion":"Av.Boyaca # 35-20","foto":"path","id_localidad":7.0,"tipo":5.0,"nombreSitio":"5Site","contacto":3.15468798e+08}
+{"_id":25.0,"direccion":"Av.Boyaca # 35-20","foto":"path","id_localidad":7.0,"tipo":5.0,"nombreSitio":"5Site","contacto":3.15468798e+08}
+{"_id":26.0,"direccion":"Av.Boyaca # 35-20","foto":"path","id_localidad":7.0,"tipo":8.0,"nombreSitio":"5Site","contacto":3.15468798e+08}
+{"_id":27.0,"direccion":"Av.Boyaca # 35-20","foto":"path","id_localidad":7.0,"tipo":8.0,"nombreSitio":"5Site","contacto":3.15468798e+08}
+{"_id":28.0,"direccion":"Av.Boyaca # 147-15","foto":"path","id_localidad":8.0,"tipo":5.0,"nombreSitio":"Soccer 147","contacto":3.15896512e+08}
+{"_id":29.0,"direccion":"Av.Boyaca # 147-15","foto":"path","id_localidad":8.0,"tipo":5.0,"nombreSitio":"Soccer 147","contacto":3.15896512e+08}
+{"_id":30.0,"direccion":"Av.Boyaca # 147-15","foto":"path","id_localidad":8.0,"tipo":5.0,"nombreSitio":"Soccer 147","contacto":3.15896512e+08}
+{"_id":31.0,"direccion":"Av.Boyaca # 147-15","foto":"path","id_localidad":8.0,"tipo":7.0,"nombreSitio":"Soccer 147","contacto":3.15896512e+08}
+{"_id":32.0,"direccion":"Av.Boyaca # 147-15","foto":"path","id_localidad":8.0,"tipo":7.0,"nombreSitio":"Soccer 147","contacto":3.15896512e+08}
+{"_id":33.0,"direccion":"Av.Boyaca # 147-15","foto":"path","id_localidad":8.0,"tipo":8.0,"nombreSitio":"Soccer 147","contacto":3.15896512e+08}
+{"_id":34.0,"direccion":"Av. Cra 9na # 153-10","foto":"path","id_localidad":9.0,"tipo":5.0,"nombreSitio":"FutNorte","contacto":3.21569846e+08}
+{"_id":35.0,"direccion":"Av. Cra 9na # 153-10","foto":"path","id_localidad":9.0,"tipo":7.0,"nombreSitio":"FutNorte","contacto":3.21569846e+08}
+{"_id":36.0,"direccion":"Av. Cra 9na # 153-10","foto":"path","id_localidad":9.0,"tipo":5.0,"nombreSitio":"FutNorte","contacto":3.21569846e+08}
+{"_id":37.0,"direccion":"Calle 165 # 56a-44","foto":"path","id_localidad":10.0,"tipo":5.0,"nombreSitio":"Ruedala","contacto":3.21569846e+08}
+{"_id":38.0,"direccion":"Calle 165 # 56a-44","foto":"path","id_localidad":10.0,"tipo":5.0,"nombreSitio":"Ruedala","contacto":3.21569846e+08}
+{"_id":39.0,"direccion":"Calle 165 # 56a-44","foto":"path","id_localidad":10.0,"tipo":5.0,"nombreSitio":"Ruedala","contacto":3.21569846e+08}
+{"_id":40.0,"direccion":"Cra 17 # 166 -56","foto":"path","id_localidad":11.0,"tipo":5.0,"nombreSitio":"Nuevo Bernabeu","contacto":3.1598647e+07}
+{"_id":41.0,"direccion":"Cra 17 # 166 -56","foto":"path","id_localidad":11.0,"tipo":11.0,"nombreSitio":"Nuevo Bernabeu","contacto":3.1598647e+07}
+{"_id":42.0,"direccion":"Cra 17 # 166 -56","foto":"path","id_localidad":11.0,"tipo":11.0,"nombreSitio":"Nuevo Bernabeu","contacto":3.1598647e+07}
+{"_id":43.0,"direccion":"Av. Calle 3 # 34A -10","foto":"path","id_localidad":12.0,"tipo":5.0,"nombreSitio":"Futbol Sala","contacto":3.15896548e+08}
+{"_id":44.0,"direccion":"Av. Calle 3 # 34A -10","foto":"path","id_localidad":12.0,"tipo":5.0,"nombreSitio":"Futbol Sala","contacto":3.15896548e+08}
+{"_id":45.0,"direccion":"Av. Calle 3 # 34A -10","foto":"path","id_localidad":12.0,"tipo":7.0,"nombreSitio":"Futbol Sala","contacto":3.15896548e+08}
+{"_id":46.0,"direccion":"Av. Calle 3 # 34A -10","foto":"path","id_localidad":12.0,"tipo":7.0,"nombreSitio":"Futbol Sala","contacto":3.15896548e+08}
+{"_id":47.0,"direccion":"Av. Calle 3 # 34A -10","foto":"path","id_localidad":12.0,"tipo":8.0,"nombreSitio":"Futbol Sala","contacto":3.15896548e+08}

@@ -1,5 +1,5 @@
 .futbolYa{
-    background: url("img/futbolfondo1.jpeg") no-repeat top center fixed;
+    background: url("img/futbolfondo.jpeg") no-repeat top center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -11,7 +11,36 @@
 }
 .row
 {
-  margin-right: 0;
+  max-width:100%;
+  text-align: center;
+}
+.reservaI{
+  float:left;
+  width:70%;
+}
+.reservaD{
+  float:right;
+  width:30%;
+}
+.reservas{
+  display:inline-block;
+}
+.buscar{
+    background: url("img/futbolfondo1.jpeg") no-repeat top center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+}
+.verde
+{
+  color:rgba(73, 255, 0, 0.8);
+}
+.blanco
+{
+  color:white;
 }
 .tit{
   text-align: center;

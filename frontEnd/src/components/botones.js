@@ -4,7 +4,7 @@ export default class Botones extends Component {
 
   render() {
     return (
-      <div >botones</div>
+      <div ></div>
     );
   }
 }
