@@ -1,4 +1,5 @@
 var mongo = require('mongodb').MongoClient;
+    BSON = mongo.BSONPure;
 var db1;
 mongo.connect('mongodb://localhost:27017/FutbolYa',function(err,db){
   if(err)
@@ -19,7 +20,7 @@ exports.list= function(req, res) {
 
 exports.get=function(req, res) {
     var id = req.params.id;
-    console.log('Retrieving wine: ' + id);
+    console.log('Retrieving usuario: ' + id);
     db1.collection('usuario', function(err, collection) {
         collection.findOne({'_id':new BSON.ObjectID(id)}, function(err, item) {
             res.send(item);
