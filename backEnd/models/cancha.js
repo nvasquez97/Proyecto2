@@ -5,10 +5,12 @@ const type = thing.type;
 
 
 var Cancha = thing.createModel('Cancha', {
+  _id: type.int(),
   direccion: type.string(),
   foto: type.string(),
   nombreSitio: type.string(),
   contacto:type.int(),
+  id_localidad, type.int(),
   tipo:type.int()
 });
 
