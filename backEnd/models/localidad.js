@@ -4,6 +4,7 @@ var db1;
 mongo.connect('mongodb://hola:1234@ds119810.mlab.com:19810/futbolya',function(err,db){
   if(err)
   {
+    /*cuidado, creo que este error no lo recibe nadie*/
     throw err;
   }
   db1=db;
@@ -46,6 +47,7 @@ exports.add = function(req, res) {
 exports.update= function(req, res) {
     var id = req.params.id;
     var localidad = req.body;
+  /*podrian pasar el id por el json no? pues la localidad sabe su id**/
     console.log('Updating localidad: ' + id);
     console.log(JSON.stringify(localidad));
     db1.collection('localidad', function(err, collection) {
