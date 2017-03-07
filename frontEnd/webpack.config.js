@@ -1,10 +1,12 @@
+var path =require('path');
+
 module.exports = {
     watch:true,
     entry: [
     './src/index.js'
   ],
   output: {
-    path: __dirname,
+    path: path.join(__dirname,'/dist'),
     filename: 'bundle.js',
     publicPath: '/'
   },
@@ -25,4 +27,3 @@ module.exports = {
     contentBase: './'
   }
 };
-
