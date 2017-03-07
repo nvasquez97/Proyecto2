@@ -4,6 +4,8 @@ const Reserva = require('./models/reserva');
 const Usuario = require('./models/usuario');
 const Localidad = require('./models/localidad');
 
+/*podrian colocar los path en cada modulo para mayor comodidad (todas las rutas de canchas en el modelo canchas), aunque así funciona tambien**/
+
 module.exports = function(app) {
   app.get('/', function (req, res) {
     res.send('This is the DB for FutbolYa')
