@@ -1,3 +1,4 @@
+/*bien por el uso de strict*/
 'use strict';
 var request = require('request');
 
