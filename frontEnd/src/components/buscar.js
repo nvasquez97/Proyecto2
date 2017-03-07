@@ -21,7 +21,7 @@
     {
       this.setState(
         {
-          tipo: 'Fútbol '+num;
+          tipo: 'Fútbol '+num
         }
       )
     }
