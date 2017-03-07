@@ -24,6 +24,7 @@
             Busca un partido en tu cancha favorita:
           </h1>
           <div className='row'>
+        <!--Pueden usar un componente para los tipos de cancha y llamar al especificado cuando el usuario haga click-->
             <button className="btn btn-default">Fútbol 5</button>
             <button className="btn btn-default">Fútbol 7</button>
             <button className="btn btn-default">Fútbol 8</button>
@@ -37,12 +38,12 @@
         </div>
       );
     }
-
+ /*seria bueno si eventualmente filtran las reservas por usuario.. creo que va para la siguiente entrega :)*/
     obtenerReservas()
     {
       axios.get(URL+"/")
     }
-
+/*JEJE obtener estudiantes :) */
     obtenerEstudiantes() {
       axios.get(URL+ "/estudiantes")
       .then(response => {
