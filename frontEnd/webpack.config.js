@@ -1,5 +1,6 @@
 module.exports = {
-  entry: [
+    watch:true,
+    entry: [
     './src/index.js'
   ],
   output: {
@@ -10,7 +11,7 @@ module.exports = {
   module: {
     loaders: [{
       exclude: /node_modules/,
-      loader: 'babel',
+      loader: 'babel-loader',
       query: {
         presets: ['react', 'es2015', 'stage-1']
       }
@@ -24,3 +25,4 @@ module.exports = {
     contentBase: './'
   }
 };
+

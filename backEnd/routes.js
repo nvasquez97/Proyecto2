@@ -5,7 +5,9 @@ const Usuario = require('./models/usuario');
 const Localidad = require('./models/localidad');
 
 module.exports = function(app) {
-
+  app.get('/', function (req, res) {
+    res.send('This is the DB for FutbolYa')
+  })
   app.get('/canchas', Cancha.list);
   app.get('/canchas/:id', Cancha.get);
   app.post('/canchas', Cancha.add);
