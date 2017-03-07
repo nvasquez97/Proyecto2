@@ -17,11 +17,11 @@
 
       }
     }
-    futbol( num)
+    futbol5()
     {
       this.setState(
         {
-          tipo: 'Fútbol '+num
+          tipo: 'Fútbol 5'
         }
       )
     }
@@ -32,7 +32,7 @@
             Busca un partido en tu cancha favorita:
           </h1>
           <div className='row'>
-            <button className="btn btn-default" onClick={this.state.futbol(5).bind(this)}>Fútbol 5</button>
+            <button className="btn btn-default" onClick={this.state.futbol5().bind(this)}>Fútbol 5</button>
             <button className="btn btn-default">Fútbol 7</button>
             <button className="btn btn-default">Fútbol 8</button>
             <button className="btn btn-default">Fútbol 11</button>
