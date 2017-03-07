@@ -19,11 +19,11 @@
     }
     futbol5()
     {
-      // this.setState(
-      //   {
-      //     tipo: 'Fútbol 5'
-      //   }
-      // )
+      this.setState(
+         {
+           tipo: 'Fútbol 5'
+         }
+       )
     }
     render() {
       return (
