@@ -12,7 +12,7 @@
       this.state={
         reservas:[],
         id:'',
-        tipo:'Sin seleccionar',
+        tipo:'Fútbol 5',
         localidades:'',
 
       }
