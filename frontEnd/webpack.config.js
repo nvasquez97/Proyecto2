@@ -1,12 +1,10 @@
-var path =require('path');
-
 module.exports = {
     watch:true,
     entry: [
     './src/index.js'
   ],
   output: {
-    path: path.join(__dirname,'/dist'),
+    path: __dirname,
     filename: 'bundle.js',
     publicPath: '/'
   },
