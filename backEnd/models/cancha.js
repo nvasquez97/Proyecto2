@@ -3,6 +3,7 @@
 
 var mongo = require('mongodb').MongoClient;
 var db1;
+/*base de datos en mongo lab muy bien**/
 mongo.connect('mongodb://hola:1234@ds119810.mlab.com:19810/futbolya',function(err,db){
   if(err)
   {
@@ -15,6 +16,7 @@ mongo.connect('mongodb://hola:1234@ds119810.mlab.com:19810/futbolya',function(er
 exports.list= function(req, res) {
     db1.collection('cancha', function(err, collection) {
         collection.find().toArray(function(err, items) {
+          /**deberian verificar si da error la busqueda antes de mandar elementos*/
             res.send(items);
         });
     });
@@ -23,6 +25,7 @@ exports.list= function(req, res) {
 
 exports.get=function(req, res) {
     var id = req.params.id;
+  /*Retrieving wine ajajjaj ***/
     console.log('Retrieving wine: ' + id);
     db1.collection('cancha', function(err, collection) {
         collection.findOne({'_id':new BSON.ObjectID(id)}, function(err, item) {
