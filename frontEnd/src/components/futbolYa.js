@@ -2,6 +2,10 @@
 import React, { Component } from 'react';
 
 export default class FutbolYa extends Component {
+  
+   /**les recomiendo para estas funcionalidades de FutbolYa crear componentes que renderizen aqui mismo. Los pueden crear 
+       desde el render y ellos a su vez crearan los espacios para llenar y etc si el usuario asi lo desea.. si no lo hacen asi 
+       no me queda tan claro como podrian hacer los cambios entre paths con react :/ */
 
   render() {
     return (
@@ -13,6 +17,7 @@ export default class FutbolYa extends Component {
       <p className="derecha">
         ¿Ya tienes equipo? Ve a tu reserva <i className="fa fa-hand-o-right"></i>
       </p>
+     
       <p className="baja">Para buscar un equipo baja:
         <br></br>
          <i className="fa fa-sort-down"></i></p>
