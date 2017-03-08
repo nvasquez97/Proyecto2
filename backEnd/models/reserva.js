@@ -23,7 +23,7 @@ exports.get = function(req, res) {
         }
         else{
         var myId = JSON.parse(req.params.id);
-        collection.findOne({'_id':1}, function(err, item) {
+        collection.findOne({'_id':id}, function(err, item) {
             res.send(item);
         });
     }
