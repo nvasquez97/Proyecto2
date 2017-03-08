@@ -16,7 +16,7 @@ mongo.connect('mongodb://hola:1234@ds119810.mlab.com:19810/futbolya',function(er
 exports.list= function(req, res) {
     db1.collection('cancha', function(err, collection) {
         collection.find().toArray(function(err, items) {
-          /**deberian verificar si da error la busqueda antes de mandar elementos*/
+
             res.send(items);
         });
     });

@@ -1,6 +1,7 @@
   'use strict';
   import React, { Component } from 'react';
-
+  import axios from 'axios'
+  const URL="https://futbolyabackend.herokuapp.com/";
   /*Considero que  tienen los componentes bien definidos, solo que les falta un poco unirlo todo y hacer uso del backend
     para consumir los servicios y desplegarlos segun el usuario*/
 

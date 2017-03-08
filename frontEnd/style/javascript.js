@@ -7,3 +7,9 @@ document.onreadystatechange = function () {
     document.getElementsByClassName('todo')[0].style.display="block";
   }
 }//
+
+
+function mostrarReserva()
+{
+	document.getElementsByClassName('reservaOc')[0].style.display='block';
+}
