@@ -51,7 +51,8 @@
 
 
       obtenerReservas(num) {
-
+        if(this.props.reserva==='Busca')
+        {
         axios.get(URL+ "reservas")
         .then(response => {
           this.setState({
@@ -60,5 +61,13 @@
             descripcion:'Mira reservas para '
           })
         })
+        }
+        else
+        {
+          this.setState({
+            tipo: 'Fútbol '+num,
+            descripcion:'Intenta reclutar en: '
+        })
       }
+    }
     }
