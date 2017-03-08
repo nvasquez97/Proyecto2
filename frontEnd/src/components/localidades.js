@@ -11,7 +11,8 @@ export default class Localidades extends Component {
       localidades:[],
       tipo:'',
       localidadH:'',
-      escoge:''
+      escoge:'',
+      selected: false
     }
   }
 
@@ -20,8 +21,8 @@ export default class Localidades extends Component {
       <div className="container">
       <h2 className="primero">¿Qué deseas hacer?</h2>
       <div className="btn-group"  data-toggle="buttons-radio">
-      <button className="btn btn-primary active" onClick={this.tipoB.bind(this)}>Buscar Equipo</button>
-      <button className="btn active" onClick={this.tipoR.bind(this)}>Reclutar Equipo</button>
+      <button className="btn btn-primary active" onClick={()=>{this.tipo(1)}}>Buscar Equipo</button>
+      <button className="btn active" onClick={()=>{this.tipo(2)}}>Reclutar Equipo</button>
       </div>
       <br></br>
       <br></br>
@@ -31,49 +32,54 @@ export default class Localidades extends Component {
       <div className="recipeList">
       {this.state.localidades.map(localidad => {
         return (
-        <li key={localidad._id}>
-        <Localidad localidad={localidad} reservasL={this.reservasL.bind(this)}/>
-        </li>
-        );
+          <li key={localidad._id}>
+          <Localidad localidad={localidad} reservasL={this.reservasL.bind(this)}/>
+          </li>
+          );
       })}
       </div>
       </ul>
       </div>
       );
-  }
+    }
 
-  tipoB()
-  {
-    this.obtenerLocalidades();
-    this.setState(
-    {tipo : 'buscar',
-    escoge:'Escoge tu localidad:',
-      localidadH:'Localidades'});
-  }
-
-  tipoR()
-  {
-    this.obtenerLocalidades();
-    this.setState(
-    {tipo : 'reclutar',
-      escoge:'Escoge tu localidad:',
-      localidadH:'Localidades'}
-    );
-  }
-
-  reservasL()
-  {
-    console.log('Estoy en localidades..');
-    document.getElementsByClassName('oculto')[0].style.display='block';
-  }
-
-  obtenerLocalidades() {
-    axios.get(URL+ "localidades")
-    .then(response => {
+    tipo(num)
+    {
+      this.obtenerLocalidades();
+      var tip=num===1?'Busca':'Recluta';
       this.setState({
-        localidades: response.data
-      })
-    })
-  }
+        tipo: tip,
+        escoge:'Escoge tu localidad:',
+        localidadH:'Localidades'});
 
-}
+      if(this.state.selected){
+        document.getElementsByClassName('oculto')[0].style.display='none';
+        this.setState(
+        {
+          selected:false
+        });
+      }
+    }
+
+    reservasL(num)
+    {
+      this.props.obtenerReservas(this.state.tipo, num);
+      if(!this.state.selected){
+        document.getElementsByClassName('oculto')[0].style.display='block';
+        this.setState(
+        {
+          selected:true
+        });
+      }
+    }
+
+    obtenerLocalidades() {
+      axios.get(URL+ "localidades")
+      .then(response => {
+        this.setState({
+          localidades: response.data
+        })
+      })
+    }
+
+  }

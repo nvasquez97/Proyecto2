@@ -10,6 +10,10 @@
   	constructor(props)
   	{
   		super(props);
+      this.state=
+      {
+        reserva:''
+      }
   	}
 
   	render()
@@ -21,13 +25,21 @@
   			</div>
 
   			<div className="localidad">
-  				<Localidades/>
+  				<Localidades obtenerReservas={this.obtenerReservas.bind(this)}/>
   			</div>
 
-  			<div className="buscar"><Buscar/></div>
+  			<div className="buscar"><Buscar reserva={this.state.reserva}/></div>
   			</div>
   			);
 
 
   	}
+
+    obtenerReservas(tipo, num)
+    {
+      this.setState(
+      {
+        reserva:tipo
+      })
+    }
   }

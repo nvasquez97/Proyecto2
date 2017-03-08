@@ -12,10 +12,10 @@
         super(props);
         this.state=
           {
-            cancha:'Fut 5',
-            precio:2000,
-            cupos: 2,
-            hora:'5:00pm'
+            cancha:'',
+            precio:-1,
+            cupos: -1,
+            hora:'4:00 pm'
           }
       }
     render(){
@@ -23,12 +23,12 @@
           <div className='container reserva'>
             <div className='reservaI blanco'>
               <h4>
-                Cancha: {this.state.cancha}
+                Cancha: {this.props.reserva.id_cancha}
               </h4>
               <p>
-                Precio: ${this.state.precio}
+                Precio: ${this.props.reserva.precio}
                 <br></br>
-                Cupos: {this.state.cupos}
+                Cupos: {this.props.reserva.cupos}
                 <br></br>
                 Hora: {this.state.hora}
               </p>
