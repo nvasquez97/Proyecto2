@@ -4,7 +4,7 @@
 	export default class InfoReservas extends Component {
 
 		/*creo que el mejor metodo para hacer que les genere la tabla que ustedes desean con datos variables es crear un componente tablaReserva
-		  Podrian mandarle por parametro el id de la reserva y él buscar en la base de datos la info y llenar la tabla del padre */
+		Podrian mandarle por parametro el id de la reserva y él buscar en la base de datos la info y llenar la tabla del padre */
 
 		render() {
 			return (

@@ -27,7 +27,7 @@
     }
     render() {
       return (
-        <div className="container reservaOc">
+        <div className="container oculto">
         <h1 className="verde">
         Busca un partido en tu cancha favorita:
         </h1>
