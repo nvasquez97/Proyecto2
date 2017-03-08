@@ -34,7 +34,6 @@ exports.get = function(req, res) {
 };
 
 exports.getCanchas = function(req, res) {
-    console.log('Paso');
     var id = (+req.params.idlocalidad);
     var tipo = (+req.params.tipo);
     console.log('Retrieving cancha: ' + id);

@@ -27,6 +27,7 @@ module.exports = function(app) {
   app.get('/reservas/:id', Reserva.get);
   app.post('/reservas', Reserva.add);
   app.delete('/reservas/:id', Reserva.delete);
+  app.get('/reservas/:idlocalidad/:tipo', Reserva.getReservas)
  //Localidades
  app.get('/localidades', Localidad.list);
   app.get('/localidades/:id', Localidad.get);

@@ -20,14 +20,59 @@ exports.get = function(req, res) {
         if(err)
         {
           throw err;
-        }
-        else{
+      }
+      else{
         var myId = JSON.parse(req.params.id);
         collection.findOne({'_id':id}, function(err, item) {
             res.send(item);
         });
     }
 });
+};
+
+exports.getReservas = function(req, res) {
+    var id = (+req.params.idlocalidad);
+    var tipo = (+req.params.tipo);
+    var idcancha;
+    db.get().collection('cancha', function(err, collection) {
+        if(err)
+        {
+          throw err;
+      }
+      else{
+        collection.findOne({'id_localidad':id,'tipo':tipo}, function(err, item) {
+            if(err)
+            {
+                throw err;
+            }
+            else
+            {
+                idcancha =item._id;   
+                db.get().collection('reserva', function(err, collection) {
+                    if(err)
+                    {
+                      throw err;
+                  }
+                  else{
+                    console.log(idcancha);
+                    collection.findOne({'id_cancha':idcancha}, function(err, item) {
+                        if(err)
+                        {
+                          throw err;
+                      }
+                      else{
+
+                        res.send(item);
+                    }
+                });
+                }
+            }); 
+            }
+            
+        });
+    }
+});
+
 };
 
 exports.add = function(req, res) {
