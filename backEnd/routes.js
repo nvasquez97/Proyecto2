@@ -10,21 +10,23 @@ module.exports = function(app) {
   app.get('/', function (req, res) {
     res.send('This is the DB for FutbolYa')
   })
+  //Cancha
   app.get('/canchas', Cancha.list);
   app.get('/canchas/:id', Cancha.get);
   app.post('/canchas', Cancha.add);
   app.delete('/canchas/:id', Cancha.delete);
- //
+ //Usuarios
   app.get('/usuarios', Usuario.list);
    app.get('/usuarios/:id', Usuario.get);
   app.post('/usuarios', Usuario.add);
   app.delete('/usuarios/:id', Usuario.delete);
- //
+ //Reservas
    app.get('/reservas', Reserva.list);
+  app.get('/reservas/:id', Reserva.get);
   app.get('/reservas/:id', Reserva.get);
   app.post('/reservas', Reserva.add);
   app.delete('/reservas/:id', Reserva.delete);
- //
+ //Localidades
  app.get('/localidades', Localidad.list);
   app.get('/localidades/:id', Localidad.get);
   app.post('/localidades', Localidad.add);
