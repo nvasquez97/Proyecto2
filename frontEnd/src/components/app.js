@@ -4,6 +4,7 @@
   import Localidades from './localidades';
   import Buscar from './buscar';
   import InfoReservas from './infoReservas';
+  import Cancha from './cancha';
 
   export default class App extends Component {
 

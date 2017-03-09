@@ -2,6 +2,7 @@
   import React, { Component } from 'react';
   import axios from 'axios'
   import Reserva from './reserva'
+  import Cancha from './cancha'
   const URL="https://futbolyabackend.herokuapp.com/";
   export default class Buscar extends Component {
 
@@ -11,23 +12,16 @@
       super(props);
       this.state={
         reservas:[],
+        canchas:[],
         id:'',
         tipo:'',
         localidades:'',
         descripcion: '',
-       estado:''
+        estado:''
 
       }
     }
-    futbol5()
-    {
-      this.setState(
-      {
-       tipo: 'Fútbol 5',
-       
-     }
-     )
-    }
+
     render() {
       return (
         <div className="container oculto">
@@ -44,6 +38,9 @@
         {this.state.reservas.map(reserva => {
           return <Reserva key={reserva.key} reserva={reserva} />
         })}
+        {this.state.canchas.map(cancha => {
+          return <Cancha key={cancha.key} cancha={cancha} />
+        })}
         </div>
         );
       }
@@ -53,21 +50,26 @@
       obtenerReservas(num) {
         if(this.props.reserva==='Busca')
         {
-        axios.get(URL+ "reservas")
-        .then(response => {
-          this.setState({
-            reservas: response.data,
-            tipo: 'Fútbol '+num,
-            descripcion:'Mira reservas para '
+          axios.get(URL+ "reservas")
+          .then(response => {
+            this.setState({
+              reservas: response.data,
+              tipo: 'Fútbol '+num,
+              descripcion:'Mira reservas para '
+            })
           })
-        })
         }
         else
         {
-          this.setState({
-            tipo: 'Fútbol '+num,
-            descripcion:'Intenta reclutar en: '
-        })
+          
+          axios.get(URL+ "canchas")
+          .then(response => {
+            this.setState({
+              canchas: response.data,
+              tipo: 'Fútbol '+num,
+              descripcion:'Intenta reclutar en: '
+            })
+          })
+        }
       }
-    }
     }
