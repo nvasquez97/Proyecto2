@@ -42,8 +42,8 @@ exports.getCanchas = function(req, res) {
           throw err;
         }
         else{
-        collection.findOne({'id_localidad':id,'tipo':tipo}, function(err, item) {
-            res.send(item);
+        collection.find({'id_localidad':id,'tipo':tipo}).toArray( function(err, items) {
+                    res.send(items);
         });
     }
 });

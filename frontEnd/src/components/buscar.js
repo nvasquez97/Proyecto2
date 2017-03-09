@@ -53,6 +53,7 @@
         {
           axios.get(URL+ "reservas"+'/'+idloc+'/'+num)
           .then(response => {
+            console.log(response);
             this.setState({
               reservas: response.data,
               tipo: 'Fútbol '+num,
@@ -62,8 +63,9 @@
         }
         else
         {
-          axios.get(URL+ "canchas")
+          axios.get(URL+ "canchas"+'/'+idloc+'/'+num)
           .then(response => {
+            console.log(response);
             this.setState({
               canchas: response.data,
               tipo: 'Fútbol '+num,
