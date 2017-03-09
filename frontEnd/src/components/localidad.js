@@ -6,7 +6,6 @@ export default class Localidad extends Component {
   	
   	constructor(props)
   	{
-      
   		super(props);
       this.state={
         id:-1,
@@ -22,7 +21,7 @@ export default class Localidad extends Component {
     
   	localidadId(loc)
   	{
-      this.props.reservasL();
+      this.props.reservasL(loc);
   	}
 
 }

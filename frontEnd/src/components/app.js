@@ -13,7 +13,8 @@
   		super(props);
       this.state=
       {
-        reserva:''
+        reserva:'',
+        localidadId: -1
       }
   	}
 
@@ -29,18 +30,17 @@
   				<Localidades obtenerReservas={this.obtenerReservas.bind(this)}/>
   			</div>
 
-  			<div className="buscar"><Buscar reserva={this.state.reserva}/></div>
+  			<div className="buscar"><Buscar reserva={this.state.reserva} localidad={this.state.localidadId}/></div>
   			</div>
   			);
-
-
   	}
 
     obtenerReservas(tipo, num)
     {
       this.setState(
       {
-        reserva:tipo
-      })
+        reserva:tipo,
+        localidadId:num
+      });
     }
   }

@@ -48,9 +48,10 @@
 
 
       obtenerReservas(num) {
+        var idloc=this.props.localidad;
         if(this.props.reserva==='Busca')
         {
-          axios.get(URL+ "reservas")
+          axios.get(URL+ "reservas"+'/'+idloc+'/'+num)
           .then(response => {
             this.setState({
               reservas: response.data,
@@ -61,7 +62,6 @@
         }
         else
         {
-          
           axios.get(URL+ "canchas")
           .then(response => {
             this.setState({
