@@ -1,7 +1,6 @@
 'use strict';
 var ObjectID = require('mongodb').ObjectID;
 var db = require('../db');
-var BSON = require('bson').BSONPure
 var URL = "mongodb://hola:1234@ds119810.mlab.com:19810/futbolya";
 
 exports.list= function(req, res) {
