@@ -23,6 +23,9 @@
   width:50%;
   text-align: center;
 }
+.inforr{
+  display:none;
+}
 .imgCancha
 {
   max-width:100px;
@@ -120,9 +123,11 @@ ul li{
 }
 
 .infoReservas{
-background-color: rgb(61,60,60);
+  color:white;
 }
-
+.inputText{
+  text-align: center;
+}
 #info{
   color:white;
 }

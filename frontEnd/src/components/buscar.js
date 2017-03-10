@@ -35,17 +35,33 @@
         <button className="btn btn-default" onClick={()=>this.obtenerReservas(11)}>Fútbol 11</button>
         </div>
         <h3 className="verde">{this.state.descripcion}<strong>{this.state.tipo}</strong></h3>
+        
         {this.state.reservas.map(reserva => {
+          
           return <Reserva key={reserva.key} reserva={reserva} />
         })}
+        var pos =0;
         {this.state.canchas.map(cancha => {
-          return <Cancha key={cancha.key} cancha={cancha} />
+          return <Cancha key={cancha.key} cancha={cancha} infoReserva={this.infoReserva.bind(this)}/>
         })}
         </div>
         );
       }
 
-
+      infoReserva(num, idC)
+      {
+       this.setState({
+        reservas:[],
+        canchas:[],
+        id:'',
+        tipo:'',
+        localidades:'',
+        descripcion: '',
+        estado:''
+      });
+       this.props.infoReserva(num, idC);
+       document.getElementsByClassName('oculto')[0].style.display='none';
+      }
 
       obtenerReservas(num) {
         var idloc=this.props.localidad;

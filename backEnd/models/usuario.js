@@ -28,11 +28,17 @@ exports.get = function(req, res) {
 });
 };
 
-exports.add =function(req, res) {
+exports.add = function(req, res) {
     var usuario = req.body;
     console.log('Adding usuario: ' + JSON.stringify(usuario));
-    db.collection('usuario', function(err, collection) {
-        collection.insert(usuario, {safe:true}, function(err, result) {
+    console.log(req.body);
+    db.get().collection('usuario', function(err, collection) {
+        if(err)
+        {
+            throw err;
+        }
+        else{
+        collection.insert(usuario, function(err, result) {
             if (err) {
                 res.send({'error':'An error has occurred'});
             } else {
@@ -40,8 +46,9 @@ exports.add =function(req, res) {
                 res.send(result[0]);
             }
         });
+        }
     });
-};
+}
 
 exports.delete =function(req, res) {
     var id = req.params.id;
