@@ -5,7 +5,8 @@
 
 		/*creo que el mejor metodo para hacer que les genere la tabla que ustedes desean con datos variables es crear un componente tablaReserva
 		Podrian mandarle por parametro el id de la reserva y él buscar en la base de datos la info y llenar la tabla del padre */
-
+		
+		// Les recomiendo que indenten mejor el codigo para que sea mas mantenible y se lea mas facil, en especial los renders
 		render() {
 			return (
 				<div className="container" >
