@@ -1,4 +1,4 @@
-  'use strict';
+// no es necesario usar 'use-strict' en ES6
   import React, { Component } from 'react';
   import FutbolYa from './futbolYa';
   import Localidades from './localidades';
@@ -23,21 +23,23 @@
   	{
   		return(
   			<div>
-        <div className="inforr">
-        <p>
-        Tu reserva tiene el id: {this.state.idReserva}
-        </p>
-        </div>
-  			<div className="futbolYa">
-  				<FutbolYa/>
-  			</div>
+          <div className="inforr">
+            <p>
+              Tu reserva tiene el id: {this.state.idReserva}
+            </p>
+          </div>
+          <div className="futbolYa">
+            <FutbolYa/>
+          </div>
 
-  			<div className="localidad">
-  				<Localidades obtenerReservas={this.obtenerReservas.bind(this)}/>
-  			</div>
+          <div className="localidad">
+            <Localidades obtenerReservas={this.obtenerReservas.bind(this)}/>
+          </div>
 
-  			<div className="buscar"><Buscar reserva={this.state.reserva} localidad={this.state.localidadId} infoReserva={this.infoReserva.bind(this)}/></div>
-        
+          <div className="buscar">
+            <Buscar reserva={this.state.reserva} localidad={this.state.localidadId} infoReserva={this.infoReserva.bind(this)}/>
+          </div>
+
   			</div>
   			);
   	}
