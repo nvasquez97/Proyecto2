@@ -5,10 +5,21 @@
 
 		/*creo que el mejor metodo para hacer que les genere la tabla que ustedes desean con datos variables es crear un componente tablaReserva
 		Podrian mandarle por parametro el id de la reserva y él buscar en la base de datos la info y llenar la tabla del padre */
+		constructor(props){
+			super(props);
+			this.state = {
+				id:'',
+				localidad:'',
+				cancha:'',
+				precio:'',
+				hora:''
+			}
+
+		}
 
 		render() {
 			return (
-				<div className="container" >
+				<div className="container infoReserva" >
 				<h1 id="info">Consulta tu Reserva</h1>
 				<div className="table-responsive">
 				<table className="table table-hover table-inverse">
@@ -23,7 +34,7 @@
 				</thead>
 				<tbody>
 				<tr>
-				<td>45</td>
+				<td>1</td>
 				<td>Suba</td>
 				<td>Gataca</td>
 				<td>25000</td>
@@ -35,4 +46,5 @@
 				</div>
 				);
 			}
+
 		}

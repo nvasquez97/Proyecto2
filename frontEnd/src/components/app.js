@@ -23,21 +23,17 @@
   	{
   		return(
   			<div>
-        <div className="inforr">
-        <p>
-        Tu reserva tiene el id: {this.state.idReserva}
-        </p>
-        </div>
   			<div className="futbolYa">
   				<FutbolYa/>
   			</div>
+        
 
   			<div className="localidad">
   				<Localidades obtenerReservas={this.obtenerReservas.bind(this)}/>
   			</div>
 
   			<div className="buscar"><Buscar reserva={this.state.reserva} localidad={this.state.localidadId} infoReserva={this.infoReserva.bind(this)}/></div>
-        
+        <InfoReservas />
   			</div>
   			);
   	}
@@ -47,7 +43,7 @@
       this.setState({
         idReserva:num
       });
-      document.getElementsByClassName('inforr')[0].style.display='block';
+      // document.getElementsByClassName('inforr')[0].style.display='block';
     }
 
     obtenerReservas(tipo, num)

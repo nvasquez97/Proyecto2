@@ -37,7 +37,7 @@
               <div className="fotoSitio">
                 <img src="./style/img/cancha.jpg" className="img-responsive imgCancha" alt="fotoCancha"></img>                              </div>
               <div>
-                <button className="btn btn-default">Reserva Cupo</button>
+                <button className="btn btn-default active" onClick={this.reservarCupo.bind(this)}>Reserva Cupo</button>
               </div>
             </div>
           </div>
@@ -45,6 +45,9 @@
       }
 
       reservarCupo(){
-
+        this.setState({
+          idReserva:1
+        });
+      document.getElementsByClassName('infoReserva')[0].style.display='block';
       }
   }

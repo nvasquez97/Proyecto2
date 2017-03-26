@@ -59,6 +59,7 @@ export default class Localidades extends Component {
           selected:false
         });
       }
+       document.getElementsByClassName('infoReserva')[0].style.display='none';
     }
 
     reservasL(num)
