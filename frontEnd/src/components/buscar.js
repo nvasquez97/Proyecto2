@@ -40,7 +40,7 @@
           
           return <Reserva key={reserva.key} reserva={reserva} />
         })}
-        var pos =0;
+        // no se pueden declarar variables adentro del return del render
         {this.state.canchas.map(cancha => {
           return <Cancha key={cancha.key} cancha={cancha} infoReserva={this.infoReserva.bind(this)}/>
         })}
